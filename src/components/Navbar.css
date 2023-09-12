@@ -17,17 +17,18 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: bold;
     color: var(--primary-color);
     text-shadow: 0 1px 3px var(--shadow-color);
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: -1px;
 }
 
 .navbar .logo img{
     height: 2rem;
-    margin-right: 10px;
+    margin-right: 1em;
 }
 
 .navbar .logo span{
@@ -40,6 +41,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     position: relative;
+    font-size: 0.9rem;
     &::before{
         content: "";
         display: inline-block;
@@ -62,4 +64,17 @@
         font-weight: bold;
     }
 }
+.sidebar-btn{
+    display: none;
+}
 
+
+@media screen and (max-width: 768px) {
+    .nav-links{
+        display: none;
+    }
+
+    .sidebar-btn{
+        display: block;
+    }
+}
