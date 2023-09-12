@@ -32,3 +32,15 @@ body{
 a{
   text-decoration: none;
 }
+
+img{
+  object-fit: cover;
+}
+
+.main{
+  padding-block: 2vw;
+  
+}
+.container{
+  padding-inline: 15vw;
+}

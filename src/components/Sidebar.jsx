@@ -1,6 +1,4 @@
-import { useState } from 'react'
-
-import './Sidebar.css'
+import '../styles/Sidebar.css'
 
 const Sidebar = ( {links, close} ) => {
   return (

@@ -1,10 +1,11 @@
 import { useState } from 'react'
 
-import Hamburger from 'hamburger-react'
 import Sidebar from './Sidebar'
+
+import Hamburger from 'hamburger-react'
 import { FaHome, FaList, FaCog } from 'react-icons/fa';
 
-import './Navbar.css'
+import '../styles/Navbar.css'
 
 const Navbar = () => {
 	const [isOpen, setOpen] = useState(false);
@@ -34,7 +35,7 @@ const Navbar = () => {
 		<>
 			<div className='navbar container'>
 				<a href="#!" className='logo'>
-					<img src="./src/assets/icon.png" alt="logo" />
+					<img src="./public/icon.png" alt="logo" />
 					<div>Good<span>Food</span></div>
 				</a>
 				<div className='nav-links'>
