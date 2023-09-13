@@ -3,35 +3,17 @@
     align-items: center;
 }
 
-.section .col{
-    width: 50%;
+.hero .typography{
+    padding-right: 2em;
 }
 
-.section.hero .typography{
-    padding-right: 1em;
-}
-
-.section .title{
-    color: var(--text-color);
-    font-size: 3em;
-    margin-bottom: .25em;
-}
-
-.section .info{
-    color: var(--text-light);
-    font-size: 1em;
-    letter-spacing: 1px;
-    line-height: 1.3;
-    margin-bottom: 1em;
-}
-
-.section.hero .gallery{
+.hero .gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1vw;
+    gap: 1.5vw;
 }
 
-.section.hero .gallery .custom-image{
+.hero .gallery .custom-image{
     border-radius: 3px;
     overflow: hidden;
     transform: scale(0.1);
@@ -64,24 +46,6 @@
     }
 }
 
-.btn{
-    border: none;
-    outline: none;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 0.75em 1em;
-    text-transform: uppercase;
-    font-size: 1.1em;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 3px;
-    box-shadow: 0 3px 6px var(--shadow-color);
-    cursor: pointer;
-    &:hover{
-        box-shadow: 0 1px 3px var(--shadow-color);
-    }
-}
-
 @keyframes popOut{
     from{
         transform: scale(0);
@@ -90,13 +54,5 @@
     to{
         transform: scale(1);
         opacity: 1;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .section.hero .gallery{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1vw;
     }
 }

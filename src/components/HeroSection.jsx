@@ -8,7 +8,7 @@ import CustomImage from './CustomImage'
 const HeroSection = () => {
 	const images = [
 		"/img/gallery/img_1.jpg",
-        "/img/gallery/img_5.jpg",
+        "/img/gallery/img_23.jpg",
 		"/img/gallery/img_9.jpg",
         "/img/gallery/img_11.jpg",
 		"/img/gallery/img_7.jpg",
