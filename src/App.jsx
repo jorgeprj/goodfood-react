@@ -2,7 +2,8 @@ import { useState } from 'react'
 
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
-import ImproveSkills from './components/ImproveSkills'
+import ImproveSection from './components/ImproveSection'
+import QuoteSection from './components/QuoteSection'
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
       <Navbar />
       <div className='container main'>
         <HeroSection />
-        <ImproveSkills />
+        <ImproveSection />
+        <QuoteSection />
       </div>
     </div>
   )

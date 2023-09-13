@@ -1,8 +1,8 @@
 import React from 'react'
 
-import '../styles/ImproveSkills.css'
+import '../styles/ImproveSection.css'
 
-const ImproveSkills = () => {
+const ImproveSection = () => {
     const list = [
         "Learn incredible recipes",
         "Chef-curated dishes crafted ",
@@ -12,9 +12,9 @@ const ImproveSkills = () => {
         "In-depth articles on food trends"
     ]
     return (
-        <div className='section improve-skills'>
+        <div className='section improve-section'>
             <div className='col img'>
-                <img src='/img/gallery/img_6.jpg' alt='improve-skills' />
+                <img src='/img/gallery/img_6.jpg' alt='improve-section' />
             </div>
             <div className='col typography'>
                 <h1 className='title'>Improve Your Culinary Skills</h1>
@@ -27,4 +27,4 @@ const ImproveSkills = () => {
     )
 }
 
-export default ImproveSkills
+export default ImproveSection
