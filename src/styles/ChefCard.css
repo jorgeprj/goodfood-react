@@ -1,0 +1,84 @@
+.chef-card{
+    display: flex;
+    height: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px var(--shadow-color);
+}
+
+.chef-card img{
+    height: 100%;
+    width: 150px;
+    border-radius: 3px;
+    box-shadow: 0 3px 6pc var(--shadow-color);
+}
+
+.chef-card-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.chef-card-info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+}
+
+.chef-name{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.chef-name svg{
+    display: flex;
+    font-size: 1em;
+    color: var(--primary-color);
+    margin-left: 0.4em;;
+}
+
+.chef-recipes,
+.chef-cuisine,
+.chef-ranking{
+    font-size: 1em;
+    color: var(--text-light);
+}
+
+.chef-rating{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 2em;
+}
+
+.rating-label{
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-light);
+}
+
+.rating-value{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.rating-value svg{
+    margin-right: 0.3em;
+    font-size: 0.8em;
+}

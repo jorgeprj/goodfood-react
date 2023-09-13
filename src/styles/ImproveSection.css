@@ -1,3 +1,7 @@
+.improve-section{
+    display: flex;
+}
+
 .improve-section .img img{
     width: 100%;
 }
