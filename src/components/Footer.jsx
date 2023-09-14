@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebookF } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6'
 import { BiLogoGmail } from 'react-icons/bi';
 import { GiKnifeFork } from 'react-icons/gi'
 
@@ -11,9 +12,10 @@ const Footer = () => {
         <div className='footer container'>
             <div className='footer-sections'>
                 <div className='footer-section'>
-                    <p className='title'><GiKnifeFork /> GoodFood.com</p>
-                    <p>Welcome to GoodFood - your one-stop culinary hub! Dive into a world of delectable recipes crafted by our expert chefs, uncover kitchen tips, explore captivating food articles, and more. Whether you're a seasoned cook or a novice, GoodFood is your free gateway to culinary inspiration.</p>
-                    <p style={{ color: '#fff' }}>&copy; 2023 | All Rights Reserved</p>
+                    <p className='title logo'><GiKnifeFork style={{color: 'var(--primary-color)'}} /> <span style={{color: 'var(--primary-color)'}}>GOOD</span>FOOD</p>
+                    <p>Become a chef, with the best chefs in the world</p>
+                    <p className='icons'><FaInstagram/> <FaFacebookF/> <FaXTwitter/>   </p>
+                    <p className='rights'>&copy; 2023 | All Rights Reserved</p>
                 </div>
                 <div className='footer-section'>
                     <p className='title'>Contact Us</p>
@@ -28,7 +30,6 @@ const Footer = () => {
                     <p><a href="https://www.linkedin.com/in/jorgeprj/"><FaLinkedin />Linkedin</a></p>
                 </div>
             </div>
-            <p className='footer-logo'><GiKnifeFork size={64}/></p>
         </div>
     )
 }

@@ -18,6 +18,20 @@
     color: #fff;
 }
 
+.footer-section .logo{
+    margin-left: 0;
+    margin-bottom: 0.3em;
+    font-size: 2.2em;
+    opacity: 0;
+    animation: 0.5s slideInLeft forwards;
+}
+
+.footer-section .logo svg{
+    margin-right: 0.3em;
+    opacity: 0;
+    animation: 0.5s slideInLeft forwards;
+}
+
 .footer-section p{
     display: flex;
     align-items: center;
@@ -41,16 +55,30 @@
     color: #fff;
 }
 
-.footer-logo{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-top: 2em;
+
+.footer .icons svg{
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    cursor: pointer;
 }
 
 .created-by{
     font-size: 2em;
     font-weight: bold;
+}
+
+.rights{
+    margin-top: 1em;
+    color: #fff;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
