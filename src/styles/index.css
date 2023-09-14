@@ -41,6 +41,7 @@ img{
 
 .main{
   padding-block: 2vw;
+  margin-top: 4vw;
   
 }
 .container{
@@ -50,7 +51,7 @@ img{
 .section{
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 4vw;
+  margin-bottom: 2vw;
 }
 
 .section .title{
@@ -90,12 +91,18 @@ img{
 }
 
 @media screen and (max-width: 1050px) {
+  .main{
+    margin-top: 10vw;
+  }
   .container {
     padding-inline: 12vw;
   }
 }
 
 @media screen and (max-width: 768px){
+  .main{
+    margin-top: 15vw;
+  }
   .chef-card{
     box-shadow: 0 5px 10px var(--shadow-color);
   }

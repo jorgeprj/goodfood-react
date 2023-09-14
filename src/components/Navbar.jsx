@@ -1,9 +1,12 @@
 import { useState } from 'react'
 
+import { Link, useLocation } from 'react-router-dom'
+
 import Sidebar from './Sidebar'
 
 import Hamburger from 'hamburger-react'
 import { FaHome, FaList, FaCog } from 'react-icons/fa';
+import { FaRankingStar } from 'react-icons/fa6'
 
 import '../styles/Navbar.css'
 
@@ -12,20 +15,26 @@ const Navbar = () => {
 	const links = [
 		{
 			name: 'Home',
-            link: '/',
+            path: '/',
 			icon: FaHome
 		},
 		{
 			name: 'Recipes',
-            link: '/recipes',
+            path: '/recipes',
 			icon: FaList
 		},
 		{
+			name: 'Ranking',
+            path: '/ranking',
+            icon: FaRankingStar
+		},
+		{
 			name: 'Settings',
-            link: '/settings',
+            path: '/settings',
 			icon: FaCog
 		}
 	];
+	const location = useLocation();
 
 	function closeSidebar() {
 		setOpen(false);
@@ -40,7 +49,7 @@ const Navbar = () => {
 				</a>
 				<div className='nav-links'>
 					{links.map(link => (
-						<a href="#!" key={link.name}>{link.name}</a>
+						<Link to={link.path} className={location.pathname == link.path ? "active" : ""} key={link.name}>{link.name}</Link>
 					))}
 				</div>
 				<div className='sidebar-btn'>

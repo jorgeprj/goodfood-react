@@ -1,25 +1,30 @@
-import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import ImproveSection from './components/ImproveSection'
-import QuoteSection from './components/QuoteSection'
-import ChefsSection from './components/ChefsSection'
-import Footer from './components/Footer'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
+import Home from './pages/Home';
+import Recipes from './pages/Recipes';
+import Ranking from './pages/Ranking';
+import Settings from './pages/Settings';
 
 
 function App() {
 
   return (
     <div>
-      <Navbar />
-      <div className='container main'>
-        <HeroSection />
-        <ImproveSection />
-        <QuoteSection />
-        <ChefsSection />
-      </div>
-      <Footer />
+      <Router>
+        <Navbar />
+        <div className='container main'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/recipes" element={<Recipes />} />
+            <Route path="/ranking" element={<Ranking />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
     </div>
   )
 }
