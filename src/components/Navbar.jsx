@@ -7,6 +7,7 @@ import Sidebar from './Sidebar'
 import Hamburger from 'hamburger-react'
 import { FaHome, FaList, FaCog } from 'react-icons/fa';
 import { FaRankingStar } from 'react-icons/fa6'
+import { GiKnifeFork } from 'react-icons/gi'
 
 import '../styles/Navbar.css'
 
@@ -44,7 +45,7 @@ const Navbar = () => {
 		<>
 			<div className='navbar container'>
 				<a href="#!" className='logo'>
-					<img src="./public/icon.png" alt="logo" />
+					<GiKnifeFork />
 					<div>Good<span>Food</span></div>
 				</a>
 				<div className='nav-links'>

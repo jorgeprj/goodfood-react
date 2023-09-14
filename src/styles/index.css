@@ -91,9 +91,16 @@ img{
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .main{
+    margin-top: 5vw;
+  }
+}
+
+
 @media screen and (max-width: 1050px) {
   .main{
-    margin-top: 10vw;
+    margin-top: 15vw;
   }
   .container {
     padding-inline: 12vw;

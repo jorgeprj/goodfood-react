@@ -27,7 +27,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding-bottom: 0.5em;
     padding-left: 1em;
 }
@@ -37,10 +36,11 @@
     align-items: center;
     flex-direction: row;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     color: var(--text-color);
     margin-top: 0.4em;
+    margin-bottom: 0.4em;
 }
 
 .chef-name svg{
@@ -53,8 +53,9 @@
 .chef-recipes,
 .chef-cuisine,
 .chef-ranking{
-    font-size: 1em;
+    font-size: 0.9em;
     color: var(--text-light);
+    margin-top: 0.4em;
 }
 
 .chef-rating{
