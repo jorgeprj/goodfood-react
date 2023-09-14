@@ -24,7 +24,7 @@ const Footer = () => {
                     <p>293 Street NYC</p>
                 </div>
                 <div className='footer-section'>
-                    <p className='title'>Author</p>
+                    <p className='title'>Created by Jorgeprj</p>
                     <p><a href="jlmp2002@gmail.com"><BiLogoGmail />jlmp2002@gmail.com</a></p>
                     <p><a href="https://github.com/jorgeprj"><FaGithub />Github</a></p>
                     <p><a href="https://www.linkedin.com/in/jorgeprj/"><FaLinkedin />Linkedin</a></p>
