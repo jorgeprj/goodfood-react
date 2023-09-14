@@ -49,7 +49,7 @@ const Navbar = () => {
 				</a>
 				<div className='nav-links'>
 					{links.map(link => (
-						<Link to={link.path} className={location.pathname == link.path ? "active" : ""} key={link.name}>{link.name}</Link>
+						<Link to={link.path} className={location.pathname === link.path ? "active" : ""} key={link.name}>{link.name}</Link>
 					))}
 				</div>
 				<div className='sidebar-btn'>
