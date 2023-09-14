@@ -4,6 +4,9 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 5px 10px var(--shadow-color);
+    animation: 0.4s popOut forwards;
+    transform: scale(0);
+    opacity: 0;
 }
 
 .chef-card img{
@@ -33,10 +36,11 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    text-align: center;
+    text-align: left;
     font-size: 1.5em;
     font-weight: bold;
     color: var(--text-color);
+    margin-top: 0.4em;
 }
 
 .chef-name svg{

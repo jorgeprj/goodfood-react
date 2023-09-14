@@ -1,6 +1,7 @@
 .section.hero{
     display: flex;
     align-items: center;
+    margin-top: 5em;
 }
 
 .hero .typography{
