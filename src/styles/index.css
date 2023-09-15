@@ -127,7 +127,7 @@ img{
     display: inline-block;
     margin: 0.75em;
   }
-  .btn{
+  .btn.principal{
     display: block;
     margin-left: 50%;
     transform: translateX(-50%);

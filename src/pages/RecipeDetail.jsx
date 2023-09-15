@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { LuChefHat } from 'react-icons/lu'
 
@@ -14,7 +14,11 @@ const RecipeDetail = ({ recipes, chefs }) => {
 	const chef = chefs.find((chef) => chef.id == recipe.chefId);
 
 	if (!recipe) {
-		return <div>Receita não encontrada</div>;
+		return(
+			<div>
+				Recipe not found
+			</div>
+		);
 	}
 
 	return (
@@ -27,7 +31,7 @@ const RecipeDetail = ({ recipes, chefs }) => {
 						<StarRating rating={recipe.rating}/>
 						<p className='recipe-chef'>
     						<LuChefHat />
-    						<span>Chef {chef.name}</span>
+    						<Link to={`/chefs/${chef.id}`} className='recipe-chef-name'>Chef {chef.name}</Link>
 						</p>
 					</div>
 

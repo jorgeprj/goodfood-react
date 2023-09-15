@@ -36,7 +36,7 @@ const Ranking = ({ chefs }) => {
 	const sortedChefs = [...chefs].sort(getSortFunction());
 
 	return (
-		<div>
+		<div className='ranking-page section'>
 			<h1>Ranking</h1>
 			<p className='ranking-desc'>
 				Welcome to "GoodFood Raking" the premier chef rating website that stands out for meticulously assessing five essential criteria: culinary creativity, excellence in execution and technique, the use of quality ingredients, customer service quality, and a commitment to sustainability. Our mission is to provide you with detailed and reliable information so that you can make informed culinary choices, discovering the best culinary talents and exceptional dining experiences around the world. Explore "GoodFood" and immerse yourself in a world of unique flavors and exceptional restaurants.

@@ -35,7 +35,7 @@ const Settings = () => {
 		{
 			"--background-color": "rgba(29, 29, 29)",
 			"--background-light": "rgb(77, 77, 77)",
-			"--shadow-color": "rgba(0,0,0,0.2)",
+			"--shadow-color": "rgba(0,0,0,0.9)",
 			"--text-color": "#fff",
 			"--text-light": "#eceaea",
 		}

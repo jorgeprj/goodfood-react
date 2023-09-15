@@ -39,6 +39,14 @@
     margin-right: 0.4em;
 }
 
+.recipe-chef .recipe-chef-name{
+    color: var(--text-light);
+}
+
+.recipe-chef .recipe-chef-name:hover{
+    color: var(--primary-color);
+}
+
 .recipe-text{
     font-size: 1em;
     color: var(--text-light);

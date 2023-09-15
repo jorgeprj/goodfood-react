@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import { GiKnifeFork } from 'react-icons/gi';
 
@@ -16,7 +17,7 @@ const ChefCard = ({ chef }) => {
                     <p className='chef-recipes'>Recipes: <b>{chef.recipesCount}</b></p>
                     <p className='chef-cuisine'>Cuisine: <b>{chef.cuisine}</b></p>
                     <p className='chef-ranking'>Ranking: <b>#{chef.ranking}</b></p>
-                    <p className='chef-more-details'>+ More Details</p>
+                    <Link to={`/chefs/${chef.id}`} className='chef-more-details'>+ More Details</Link>
 
                 </div>
                 <div className='chef-rating'>

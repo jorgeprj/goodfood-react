@@ -2,8 +2,12 @@
     margin-bottom: 1em;
 }
 
+.ranking-page{
+    color: var(--text-color);
+}
+
 .ranking-desc{
-    color: var(--text-light);
+    color: var(--text-light);;
     margin-bottom: 2em;
 }
 

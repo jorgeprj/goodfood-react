@@ -29,6 +29,29 @@
     z-index: 2;
 }
 
+.chef-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .chef-name {
+    position: absolute;
+    bottom: 1em;
+    left: 4em;
+    font-size: 1em;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    white-space: nowrap;
+    border-radius: 4px;
+  }
+  
+  .chef-container:hover .chef-name {
+    opacity: 1;
+  }
+
 .recipe-card .recipe-title{
     font-size: 1.25em;
     font-weight: 700;
