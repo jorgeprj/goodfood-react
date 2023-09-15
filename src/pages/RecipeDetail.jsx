@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 
 import { LuChefHat } from 'react-icons/lu'
 
+import StarRating from '../components/StarRating';
+
 import '../styles/RecipeDetail.css';
 
 
@@ -20,7 +22,15 @@ const RecipeDetail = ({ recipes, chefs }) => {
 			<div className='recipe-section'>
 				<div className='recipe-info'>
 					<h1 className='recipe-title'>{recipe.title}</h1>
-					<p className='recipe-chef'><LuChefHat/> Chef {chef.name}</p>
+
+					<div className='recipe-details-infos'>
+						<StarRating rating={recipe.rating}/>
+						<p className='recipe-chef'>
+    						<LuChefHat />
+    						<span>Chef {chef.name}</span>
+						</p>
+					</div>
+
 					<p className='recipe-text'>{recipe.desc}</p>
 					<h2 className='recipe-subtitle'>Ingredients</h2>
 					{recipe.ingredients.map((ingredient, index) => (

@@ -1,0 +1,13 @@
+.star-rating{
+    display: flex; 
+    align-items: center;
+    justify-content: left; 
+    flex-direction: row; 
+    text-align: center; 
+}
+
+.star-rating-text{
+    margin-left: 0.6em; 
+    font-size: 0.8em; 
+    margin-top: 0.2em;
+}

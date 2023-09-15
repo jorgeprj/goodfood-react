@@ -15,16 +15,27 @@
     color: var(--text-color);
 }
 
+.recipe-details-infos{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    margin-bottom: 1.4em;
+}
+
 .recipe-info .recipe-chef{
+    display: flex;
+    align-items: center;
     color: var(--text-light);
     font-size: 0.9em;
     font-weight: 600;
-    margin-bottom: 1.4em;
+    margin-left: 2em;
 }
 
 .recipe-info .recipe-chef svg{
     color: var(--primary-color);
     font-size: 1.2em;
+    margin-right: 0.4em;
 }
 
 .recipe-text{
@@ -33,8 +44,8 @@
 }
 
 .recipe-subtitle{
-    font-size: 1.2em;
-    margin-top: 1em;
+    font-size: 1.4em;
+    margin-top: 0.6em;
     color: var(--text-color);
 }
 

@@ -39,7 +39,7 @@
     color: var(--text-light);
     font-size: 0.9em;
     letter-spacing: 1px;
-
+    margin-top: 1.2em;
 }
 
 .recipe-stats {
