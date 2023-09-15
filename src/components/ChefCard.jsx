@@ -20,7 +20,7 @@ const ChefCard = ({ chef }) => {
                 </div>
                 <div className='chef-rating'>
                     <p className='rating-label'>Rating</p>
-                    <p className='rating-value'><GiKnifeFork color={'#17C64F'} /> {chef.rating}</p>
+                    <p className='rating-value'><GiKnifeFork color={'var(--primary-color)'} /> {chef.rating}</p>
                 </div>
             </div>
         </div>

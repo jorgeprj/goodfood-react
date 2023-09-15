@@ -36,7 +36,7 @@
 }
 
 .navbar .logo span{
-    color: #332D2E;
+    color: var(--text-light);
 }
 
 .nav-links a{
