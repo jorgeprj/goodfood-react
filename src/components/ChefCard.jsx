@@ -12,7 +12,6 @@ const ChefCard = ({ chef }) => {
                 <div className='chef-card-info'>
                     <h3 className='chef-name'>
                         {chef.name}
-                        <chef.icon />
                     </h3>
                     <p className='chef-recipes'>Recipes: <b>{chef.recipesCount}</b></p>
                     <p className='chef-cuisine'>Cuisine: <b>{chef.cuisine}</b></p>

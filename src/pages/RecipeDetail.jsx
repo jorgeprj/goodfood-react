@@ -5,9 +5,11 @@ import { LuChefHat } from 'react-icons/lu'
 
 import '../styles/RecipeDetail.css';
 
-const RecipeDetail = ({ recipes }) => {
+
+const RecipeDetail = ({ recipes, chefs }) => {
 	const { id } = useParams();
 	const recipe = recipes.find((recipe) => recipe.id === parseInt(id, 10));
+	const chef = chefs.find((chef) => chef.id == recipe.chefId);
 
 	if (!recipe) {
 		return <div>Receita não encontrada</div>;
@@ -18,7 +20,7 @@ const RecipeDetail = ({ recipes }) => {
 			<div className='recipe-section'>
 				<div className='recipe-info'>
 					<h1 className='recipe-title'>{recipe.title}</h1>
-					<p className='recipe-chef'><LuChefHat/> Chef {recipe.chef}</p>
+					<p className='recipe-chef'><LuChefHat/> Chef {chef.name}</p>
 					<p className='recipe-text'>{recipe.desc}</p>
 					<h2 className='recipe-subtitle'>Ingredients</h2>
 					<p>1 pacote de massa para pizza (ou você pode fazer a massa caseira)</p>
