@@ -2,8 +2,6 @@ import React from 'react'
 
 import ChefCard from './ChefCard'
 
-import { GiSushis, GiTacos, GiHamburger, GiMeatCleaver, GiFireBowl, GiPieSlice } from 'react-icons/gi';
-
 import '../styles/ChefsSection.css'
 
 import chefs from '../data/chefs.json'

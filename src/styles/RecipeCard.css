@@ -31,7 +31,6 @@
 .recipe-card .recipe-title{
     font-size: 1.25em;
     font-weight: 700;
-    margin-bottom: 0.5em;
     margin-top: 0.25em;
     color: var(--text-color);
 }
@@ -41,6 +40,20 @@
     font-size: 0.9em;
     letter-spacing: 1px;
 
+}
+
+.recipe-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; 
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+  }
+
+.recipe-stats p {
+    flex: 1;
+    text-align: center;
 }
 
 .recipe-card .view-btn{

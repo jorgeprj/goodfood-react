@@ -23,16 +23,19 @@ const RecipeDetail = ({ recipes, chefs }) => {
 					<p className='recipe-chef'><LuChefHat/> Chef {chef.name}</p>
 					<p className='recipe-text'>{recipe.desc}</p>
 					<h2 className='recipe-subtitle'>Ingredients</h2>
-					<p>1 pacote de massa para pizza (ou você pode fazer a massa caseira)</p>
-					<p>Farinha de trigo para polvilhar</p>
-					<p>1 xícara de molho de tomate</p>
-					<p>1 colher de chá de azeite de oliva</p>
-					<p>1 dente de alho picado</p>
+					{recipe.ingredients.map((ingredient, index) => (
+        				<p className='recipe-text' key={index}>- {ingredient}</p>
+      				))}
 				</div>
 				<img className='recipe-image' src={`../public/${recipe.image}`}/>
 			</div>
 			<h2 className='recipe-subtitle'>Step by Step</h2>
-			<p className='recipe-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quidem expedita ipsum sequi assumenda est numquam eos eius dicta consequuntur voluptas officia totam aliquam laboriosam ut, architecto, hic accusamus unde!</p>
+			{recipe.stepByStep.map((stepByStep, index) => (
+        				<p className='recipe-text' key={index} style={{lineHeight: "2em"}}>{index + 1}. {stepByStep}</p>
+      				))}
+			<div>
+
+			</div>
 		</div>
 	);
 }
