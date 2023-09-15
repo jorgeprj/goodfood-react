@@ -22,8 +22,8 @@ function App() {
 				<div className='container main'>
 					<Routes>
 						<Route path="/" element={<Home />} />
-						<Route path="/recipes" element={<Recipes recipes={recipes} />} />
-						<Route path="/recipes/:id" element={<RecipeDetail recipes={recipes} chefs={chefs}/>} />
+						<Route path="/recipes" element={<Recipes recipes={recipes} chefs={chefs} />} />
+						<Route path="/recipes/:id" element={<RecipeDetail recipes={recipes} chefs={chefs} />} />
 						<Route path="/ranking" element={<Ranking />} />
 						<Route path="/settings" element={<Settings />} />
 					</Routes>
