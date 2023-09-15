@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
+import NotFound from './NotFound';
 
 const Chef = ( {chefs} ) => {
     const { id } = useParams();
@@ -7,9 +8,7 @@ const Chef = ( {chefs} ) => {
 
 	if (!chef) {
 		return(
-            <div>
-                Chef not found!
-            </div>
+      <NotFound/>
         );
 	}
 

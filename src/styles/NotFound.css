@@ -1,0 +1,28 @@
+.not-found {
+    justify-content: center;
+    text-align: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+.not-found .title{
+    font-size: 12em;
+    line-height: 1.2em;
+    color: var(--primary-color);
+}
+
+.not-found .subtitle{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.not-found .text{
+    color: var(--text-light);
+    margin-bottom: 2em;
+}
+
+.not-found .link:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}

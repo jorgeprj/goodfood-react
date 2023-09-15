@@ -6,20 +6,22 @@ import { LuChefHat } from 'react-icons/lu'
 import StarRating from '../components/StarRating';
 
 import '../styles/RecipeDetail.css';
+import NotFound from './NotFound';
 
 
 const RecipeDetail = ({ recipes, chefs }) => {
 	const { id } = useParams();
 	const recipe = recipes.find((recipe) => recipe.id === parseInt(id, 10));
-	const chef = chefs.find((chef) => chef.id == recipe.chefId);
 
 	if (!recipe) {
 		return(
 			<div>
-				Recipe not found
+				<NotFound/>
 			</div>
 		);
 	}
+	
+	const chef = chefs.find((chef) => chef.id == recipe.chefId);
 
 	return (
 		<div className="recipe-details section">
