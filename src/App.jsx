@@ -12,6 +12,7 @@ import Settings from './pages/Settings';
 
 import recipes from './data/recipes.json'
 import chefs from './data/chefs.json'
+import NotFound from './pages/NotFound';
 
 function App() {
 	recipes.sort(() => Math.random() - 0.5)
@@ -28,6 +29,7 @@ function App() {
 						<Route path="/ranking" element={<Ranking chefs={chefs} />} />
 						<Route path="/chefs/:id" element={<Chef chefs={chefs} />} />
 						<Route path="/settings" element={<Settings />} />
+						<Route path="/*" element={<NotFound />} />
 					</Routes>
 				</div>
 				<Footer />
