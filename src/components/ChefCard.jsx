@@ -15,7 +15,8 @@ const ChefCard = ({ chef }) => {
                     </h3>
                     <p className='chef-recipes'>Recipes: <b>{chef.recipesCount}</b></p>
                     <p className='chef-cuisine'>Cuisine: <b>{chef.cuisine}</b></p>
-                    <p className='chef-ranking'>World Ranking: <b>#{chef.ranking}</b></p>
+                    <p className='chef-ranking'>Ranking: <b>#{chef.ranking}</b></p>
+                    <p className='chef-more-details'>+ More Details</p>
 
                 </div>
                 <div className='chef-rating'>

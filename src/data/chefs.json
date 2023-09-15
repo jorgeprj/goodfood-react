@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "name": "Daniel Inouye",
+      "name": "Dani Inouye",
       "img": "img/top-chefs/img_8.jpg",
       "bio": "Specialized in the art of Japanese cuisine, Joe Yamamoto is a master of high-quality sushi and sashimi.",
       "ranking": "02",
@@ -11,9 +11,9 @@
     }, 
     {
       "id": 2,
-      "name": "Pierre Dupont",
+      "name": "Eric Dupont",
       "img": "img/top-chefs/img_5.jpg",
-      "bio": "Descended from a long line of French chefs, Pierre is a master in the art of contemporary French cuisine.",
+      "bio": "Descended from a long line of French chefs, Eric is a master in the art of contemporary French cuisine.",
       "ranking": "01",
       "recipesCount": 67,
       "cuisine": "French",

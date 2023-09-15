@@ -41,16 +41,15 @@
     font-weight: bold;
     color: var(--text-color);
     margin-top: 0.4em;
-    margin-bottom: 0.2em;
 }
 
+.chef-ranking,
 .chef-recipes,
-.chef-cuisine,
-.chef-ranking{
+.chef-cuisine{
     font-size: 0.9em;
     color: var(--text-light);
-    margin-top: 0.4em;
 }
+
 
 .chef-rating{
     display: flex;
@@ -80,4 +79,14 @@
 .rating-value svg{
     margin-right: 0.3em;
     font-size: 0.8em;
+}
+
+.chef-more-details{
+    font-size: 0.9em;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.chef-more-details:hover{
+    text-decoration: underline;
 }

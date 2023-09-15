@@ -1,0 +1,35 @@
+.ranking-card{
+    margin-bottom: 1em;
+}
+
+.ranking-desc{
+    color: var(--text-light);
+    margin-bottom: 2em;
+}
+
+.ranking-filter{
+    margin-bottom: 2em;
+}
+
+.ranking-filter .button{
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75em 1em;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px var(--shadow-color);
+    cursor: pointer;
+    margin-right: 1em;
+    &:hover{
+        box-shadow: 0 1px 3px var(--shadow-color);
+    }
+}
+
+.button.active {
+    color: rgba(255, 255, 255, 0.5) 
+  }
