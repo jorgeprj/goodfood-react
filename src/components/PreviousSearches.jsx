@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { FaSearch } from 'react-icons/fa'
 
 import '../styles/PreviousSearches.css'
 
-const PreviousSearches = () => {
+const PreviousSearches = ( {search, setSearch} ) => {
     const searches = [
         "pizza", "burger", "cookies", "juice", "asian", "pasta", "salad", "ice cream", "lasagna", "soup", "tacos", "feijoada", "sushi", "fish", "meat"
     ]
+
     return (
         <div>
             <div className='previous-searches section'>
@@ -20,7 +21,7 @@ const PreviousSearches = () => {
 					))}
 				</div>
 				<div className='search-box'>
-					<input type="text" placeholder='Search...' />
+					<input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder='Search...' />
 					<button className='btn'>
 						<FaSearch />
 					</button>

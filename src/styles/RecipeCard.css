@@ -4,6 +4,10 @@
     grid-gap: 1.5em;
 }
 
+.recipes-container>div {
+    max-width: 400px;
+}
+
 .recipe-card{
     border-radius: 5px;
     overflow: hidden;
