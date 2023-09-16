@@ -72,6 +72,24 @@
     display: none;
 }
 
+.nav-link-login{
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    padding: 0.4em 0.4em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px var(--shadow-color);
+    cursor: pointer;
+    margin-left: 1em;
+    color: #fff;
+    &:hover{
+        box-shadow: 0 1px 3px var(--shadow-color);
+    }
+}
 
 @media screen and (max-width: 768px) {
     .nav-links{

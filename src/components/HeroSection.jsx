@@ -4,6 +4,7 @@ import '../styles/HeroSection.css'
 import '../styles/CustomImage.css'
 
 import CustomImage from './CustomImage'
+import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
 	const images = [
@@ -22,7 +23,8 @@ const HeroSection = () => {
 			<div className='col typography'>
 				<h1 className='title'>What Are We About</h1>
 				<p className='info'>Welcome to GoodFood - your one-stop culinary hub! Dive into a world of delectable recipes crafted by our expert chefs, uncover kitchen tips, explore captivating food articles, and more. Whether you're a seasoned cook or a novice, GoodFood is your free gateway to culinary inspiration. So start exploring now.</p>
-				<button className='btn'>Explore Now</button>
+				<Link to="/recipes"><button className='btn'>Explore Now</button></Link>
+				
 			</div>
 			<div className='col gallery'>
 				{ images.map((src, index) => (

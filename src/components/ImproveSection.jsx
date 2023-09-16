@@ -1,6 +1,7 @@
 import React from 'react'
 
 import '../styles/ImproveSection.css'
+import { Link } from 'react-router-dom';
 
 const ImproveSection = () => {
     const list = [
@@ -11,6 +12,11 @@ const ImproveSection = () => {
         "Interactive cooking tutorials",
         "In-depth articles on food trends"
     ]
+
+    function login() {
+        window.location.href = '/login';
+    }
+
     return (
         <div className='section improve-section'>
             <div className='col img'>
@@ -21,7 +27,7 @@ const ImproveSection = () => {
 				{ list.map((item, index) => (
 					<p className='skill-item' key={index}>{item}</p>
 				))}
-                <button className='btn'>Signup Now</button>
+                <Link to="/login"><button className='btn'>Signup Now</button></Link>
             </div>
         </div>
     )
