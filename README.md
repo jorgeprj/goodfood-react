@@ -59,10 +59,6 @@ To run this project on your local machine, follow these steps:
 
 5. Open your web browser and access the project at `http://localhost:5173`.
 
-## Accessing the Website
-
-You can access the GoodFood website by clicking [here](https://jorgeprj.github.io/goodfood-react).
-
 ## Screenshots
 
 ![Screenshot Home](./public/img/screenshots/screenshot_1.png)
