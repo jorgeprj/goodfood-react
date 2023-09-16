@@ -11,7 +11,7 @@ const ChefCard = ({ chef }) => {
             <img src={chef.img} alt="" />
             <div className='chef-card-container'>
                 <div className='chef-card-info'>
-                    <h3 className='chef-name'>
+                    <h3 className='chef-card-name'>
                         {chef.name}
                     </h3>
                     <p className='chef-recipes'>Recipes: <b>{chef.recipesCount}</b></p>

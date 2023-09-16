@@ -32,7 +32,7 @@
     justify-content: space-between;
 }
 
-.chef-name{
+.chef-card-name{
     display: flex;
     align-items: center;
     flex-direction: row;

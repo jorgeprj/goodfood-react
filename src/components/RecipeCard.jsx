@@ -11,10 +11,10 @@ const RecipeCard = ({ recipe, chef }) => {
 
 	return (
 		<div className='recipe-card'>
-			<CustomImage imgSrc={recipe.image} pt="65%" />
+			<CustomImage imgSrc={`../public/${recipe.image}`} pt="65%" />
 			<div className='recipe-card-info'>
 				<Link to={`/chefs/${chef.id}`} class="chef-container">
-					<img class='chef-img' src={chef.img} alt="" />
+					<img class='chef-img' src={`../public/${chef.img}`} alt="" />
 					<div class="chef-name">{chef.name}</div>
 				</Link>
 				<p className='recipe-title'>{recipe.title}</p>

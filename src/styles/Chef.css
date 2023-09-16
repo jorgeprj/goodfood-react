@@ -1,0 +1,83 @@
+.chef-profile {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.chef-profile img {
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.chef-profile h2 {
+    margin: 0;
+    font-size: 1.7em;
+}
+
+.chef-profile-name {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.chef-prof {
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.chef-prof svg{
+    color: var(--primary-color);
+    margin-right: 0.3em;
+}
+
+.chef-profile-rating {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5em;
+}
+
+.chef-details-info {
+    display: flex;
+}
+
+.details-info {
+    margin-right: 1em;
+}
+
+.chef-profile-bio h2{
+    color: var(--text-color);
+    margin-top: 1em;
+}
+
+.chef-profile-bio p{
+    color: var(--text-light);
+}
+
+.divider {
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 2em 0;
+}
+
+.chef-profile-recipes h2 {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: var(--text-color);
+}
+
+.chef-recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1.5em;
+}
+
+.chef-recipes-container>div {
+    max-width: 400px;
+}

@@ -27,7 +27,7 @@ function App() {
 						<Route path="/recipes" element={<Recipes recipes={recipes} chefs={chefs} />} />
 						<Route path="/recipes/:id" element={<RecipeDetail recipes={recipes} chefs={chefs} />} />
 						<Route path="/ranking" element={<Ranking chefs={chefs} />} />
-						<Route path="/chefs/:id" element={<Chef chefs={chefs} />} />
+						<Route path="/chefs/:id" element={<Chef recipes={recipes} chefs={chefs} />} />
 						<Route path="/settings" element={<Settings />} />
 						<Route path="/*" element={<NotFound />} />
 					</Routes>
