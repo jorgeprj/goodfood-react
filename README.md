@@ -1,6 +1,6 @@
 # GoodFood - Responsive React Website
 
-![GoodFood Logo](/public/completeLogo.png)
+![GoodFood](/public/print1.png)
 
 Welcome to GoodFood, a responsive React website project developed as part of a presentation for a company interested in enhancing their recipe website. This project was created to showcase ideas and functionalities for the company's website and features a fictitious recipe portal with four main pages: Home, Recipes, Ranking, and Settings.
 
@@ -83,6 +83,6 @@ This project was developed by [Jorgeprj](https://github.com/jorgeprj).
 
 ---
 
-Thank you for checking out the GoodFood project! We hope it serves as a valuable demonstration of ideas for your company's website. If you have any questions or need further information, please don't hesitate to contact us.
+Thank you for checking out the GoodFood project! We hope it serves as a valuable demonstration of ideas for your company's website. If you have any questions or need further information, please don't hesitate to contact me.
 
 **Enjoy your culinary experience with GoodFood!** 🍽️👩‍🍳👨‍🍳
